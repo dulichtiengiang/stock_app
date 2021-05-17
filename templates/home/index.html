@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home {{ ticker_price}}{% endblock title %}
+{% block content %}
+    <div class="col-sm">
+        <h1>Welcome to Stock Application</h1>
+        <hr/>
+        <h2></h2>
+    </div>
+    <div class="col">
+        {% include 'shared/portfolio.html' %}
+    </div>
+{% endblock content %}
+
